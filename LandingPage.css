@@ -1,0 +1,164 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text : 1rem;
+    --head: calc(1.5rem + 6vw);
+    --bg-color:#ca6800;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+.hero-section{
+    min-height: 100vh;
+    background: url(https://img.freepik.com/free-photo/top-view-arrangement-with-beauty-bag-copy-space_23-2148301851.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index:2;
+    animation: slid Is ease-in-out;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: black;
+    transform: translateY(-100%);
+    animation: movedown 850ms ease-in 1s forwards;
+}
+
+@keyframes movedown{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+    
+}
+
+.list ul{
+    list-style: none;
+}
+.list ul li{
+    font-size: x-large;
+    padding: 0.5rem;
+}
+.list ul li a{
+    text-decoration: dashed;
+    color: #ca002c;
+}
+.list ul li a:hover{
+    border-block: 2px solid white ;
+}
+.list{
+    justify-content: left;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+    padding-right: 0rem;
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+.hero-text {
+    color: rgb(253, 173, 0);
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+}
+
+.hero-text h2{
+    padding-bottom: 0rem;
+    font-size: xx-large;
+    color: rgb(215, 115, 0);
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.hero-text h6{
+    color: #a34100 ;
+    height: 0vh;
+    display: flex;
+    flex-direction:column ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: x-large;
+    font-weight: 45;
+    padding-bottom: 5rem;
+    /*border: 1px solid black;*/
+    
+}
+
+.hero-text h6+p{
+    padding-top: 0rem;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-indent: 3.5%;
+    margin: 10px 10px 150px 10px; 
+}
+@keyframes slide {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.hero-text a{
+    color: rgb(0, 0, 0);
+    background: var(--bg-color);
+    font-weight: 50;
+    font-size: var(--text);
+    padding: 0.8rem 1rem ;
+    margin: 0.8rem auto;
+    display: block;
+    transition: opacity 250ms linear;
+    border: 2px solid black;
+
+}
+.hero-text a:hover{
+    opacity: 0.8;
+}
+.hero-text h2{
+    font-size: var(--head);
+}
+
+.hero-text p{
+    font-size: 3rem;
+}
